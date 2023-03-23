@@ -1,5 +1,5 @@
 {
-  "proxy": "http://localhost:5000",
+  "proxy": "https://easy-gray-crab-cape.cyclic.app",
   "name": "my-project",
   "version": "0.1.0",
   "private": true,
