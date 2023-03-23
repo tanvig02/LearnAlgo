@@ -112,6 +112,14 @@ app.get("/", (req, res) => {
   res.status(200).send("hello world");
 });
 
+//static files
+app.use(express.static(path.join(__dirname, "../my-project/build")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../my-project/build/index.html"));
+});
+// app.use(require("../"))
+console.log(path.join(__dirname, "../my-project/build/index.html"));
+
 // listening
 app.listen(PORT, () => {
   console.log(`listing to PORT ${PORT} `);
