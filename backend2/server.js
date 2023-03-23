@@ -109,9 +109,9 @@ app.post("/addUser", async (req, res) => {
   }
 });
 
-app.get("/", (req, res) => {
-  res.status(200).send("hello world");
-});
+// app.get("/", (req, res) => {
+//   res.status(200).send("hello world");
+// });
 
 //static files
 app.use(express.static(path.join(__dirname, "../my-project/build")));
